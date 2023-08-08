@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public float[] Lanes = new float[3] { -5.0f, 0f, 5.0f };
+    public float[] Lanes = new float[3] { -5, 0f, 5f };
     public static GameManager instancia;
     public GameObject InimigoPrefab;
+    public int Pontos = 0;
+    public int Vidas = 3;
+
     public void Awake()
     {
         if (instancia == null)
@@ -21,14 +25,26 @@ public class GameManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
 
     }
 
-    //public static
-      //  {
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+        else if (collision.gameObject.tag == "Limit")
+        {
+            Pontos++;
+            Destroy(this.gameObject);
+    
+           
+        }
+    }
 
-        //}
+    
 }

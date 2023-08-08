@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7db49190-a45c-e184-e2a2-b068a20a6190}</ProjectGuid>
+    <ProjectGuid>{8185d75f-852a-0c00-1ff7-b965be1c4d23}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.VisualStudio.Editor</AssemblyName>
@@ -333,7 +333,7 @@
         <HintPath>D:\unity\2021.3.19f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>D:\unity\Projetos\Nova Blast\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+        <HintPath>D:\Git\Nova-Blast\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>D:\unity\2021.3.19f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
@@ -713,19 +713,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{c81391fa-8546-0113-5117-5802a5b41923}</Project>
+      <Project>{06f6ed17-1ea3-c848-f04d-13484bd429d7}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{38f90514-8d74-169c-3b01-15f406c28d74}</Project>
+      <Project>{3a02a600-34b0-31c2-44c1-93f04e275d1e}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{10c5b353-9679-75f8-a539-cefb79f29ce9}</Project>
+      <Project>{b34776f7-6d37-b025-0a0b-7d5cd7f9e56f}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{83a0e754-7dc3-5382-e2cd-18b08c491922}</Project>
+      <Project>{f492b143-cfc9-bec5-1726-92cc6cb10951}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
