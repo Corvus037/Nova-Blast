@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class Enemy : MonoBehaviour {
 
   
   public float speed = 1;
+    public Text Pontostxt;
+    public int Pontos = 0;
 
-  
-  public float startY = 5;
+
+    public float startY = 5;
 
   
   void Awake() {
@@ -18,11 +21,8 @@ public class Enemy : MonoBehaviour {
     transform.Translate(0, -speed * Time.deltaTime, 0);
   }
 
-  
-  void OnCollisionEnter(Collision collision) {
-    if (collision.gameObject.tag == "Player") {
-      SceneManager.LoadScene("GameOver");
-      Destroy(this.gameObject);
-    }
-  }
+
+    
+
+
 }

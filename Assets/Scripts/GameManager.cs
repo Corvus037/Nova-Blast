@@ -21,33 +21,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
-    void Start()
+    void OnTriggerEnter(Collider other)
     {
-
-    }
-
-    
-    void Update()
-    {
-
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             SceneManager.LoadScene("GameOver");
         }
-        else if (collision.gameObject.tag == "Limit")
+        else if (other.gameObject.tag == "Limit")
         {
             Pontos++;
-            Pontostxt.text = "Pontos: " + Pontos; 
+            Pontostxt.text = "Pontos: " + Pontos;
             Destroy(this.gameObject);
-    
-           
         }
     }
+}
 
     
-}
+
