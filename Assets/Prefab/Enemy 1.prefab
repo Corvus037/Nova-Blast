@@ -150,6 +150,6 @@ MonoBehaviour:
   - 0
   - 5
   InimigoPrefab: {fileID: 0}
-  Pontostxt: {fileID: 0}
+  Pontostxt: {fileID: 1164844935688992210, guid: cf131dfd63117e541bc038eebda8c55b, type: 3}
   Pontos: 0
   Vidas: 3

@@ -13,6 +13,7 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         Invoke("RndPos", spawn);
+
     }
 
     // Update is called once per frame
@@ -20,14 +21,19 @@ public class Spawner : MonoBehaviour
     {
 
     }
-
     void RndPos()
     {
-        int rnd = Random.Range(1, 4);
         int rng = Random.Range(1, 11);
+        int rnd = Random.Range(1, 4);
         pos = rnd;
-        tipo = 0;
-
+        if (rng <= 8)
+        {
+            tipo = 1;
+        }
+        else
+        {
+            tipo = 0;
+        }
         if (pos == 1)
         {
             Instantiate(obj[tipo], new Vector3(-0.53f, 5.13f, -0.26f), Quaternion.identity);
@@ -40,7 +46,6 @@ public class Spawner : MonoBehaviour
         {
             Instantiate(obj[tipo], new Vector3(4.98f, 5.22f, 0f), Quaternion.identity);
         }
-
         Invoke("RndPos", spawn);
     }
 }

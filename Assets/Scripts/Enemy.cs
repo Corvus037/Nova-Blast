@@ -5,8 +5,7 @@ public class Enemy : MonoBehaviour {
 
   
   public float speed = 1;
-    public Text Pontostxt;
-    public int Pontos = 0;
+    
 
 
     public float startY = 5;
